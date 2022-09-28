@@ -5,7 +5,10 @@
         "isActive": true,
         "balance": "$1,123.97",
         "image": "https://i0.wp.com/www.fitness-holzminden.de/wp-content/uploads/hantel-scaled.jpg?fit=2048%2C1024&ssl=1",
+        "picture": "https://media.istockphoto.com/photos/passport-picture-businesswoman-with-brown-hair-picture-id856479974?b=1&k=20&m=856479974&s=170667a&w=0&h=lsFA0ysOxRbYpz-989tgILhd29y-oRtGvMOnQKZhfc4=",
         "age": 35,
+        "weight": 109,
+        "height": 6.8,
         "instruments": [
             "Weight-lift"
         ],
@@ -24,7 +27,10 @@
         "isActive": true,
         "balance": "$2,058.23",
         "image": "https://i0.wp.com/www.fitness-holzminden.de/wp-content/uploads/schritt-scaled.jpg?fit=2048%2C1024&ssl=1",
+        "picture": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXhlY3V0aXZlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
         "age": 38,
+        "weight": 69,
+        "height": 6.9,
         "instruments": [
             "Cardio"
         ],
@@ -43,7 +49,10 @@
         "isActive": false,
         "balance": "$1,446.70",
         "image": "https://i0.wp.com/www.fitness-holzminden.de/wp-content/uploads/rad-scaled.jpg?fit=2048%2C1024&ssl=1",
+        "picture": "https://brandongaille.com/wp-content/uploads/2019/04/21-Pros-and-Cons-of-One-Person-Company.png",
         "age": 31,
+        "weight": 95,
+        "height": 6.9,
         "instruments": [
             "Cycling"
         ],
@@ -62,7 +71,10 @@
         "isActive": true,
         "balance": "$2,187.78",
         "image": "https://www.alpentherme.com/01-welten/sport-fitness/fitness/image-thumb__1086__content-slider/Alpentherme_Gastein_SportsWorld_FitnessCenter_Laufband8-MarktlPhotography.webp",
+        "picture": "https://thumbs.dreamstime.com/b/young-corporate-man-posing-confidently-smiling-guy-arms-crossed-39855022.jpg",
         "age": 37,
+        "weight": 59,
+        "height": 5.5,
         "instruments": [
             "Running"
         ],
@@ -81,7 +93,10 @@
         "isActive": true,
         "balance": "$1,264.57",
         "image": "https://images.jhtassets.com/e91ac67ff5d08b93c1fb5bf7dba68f6eabe337a4/",
+        "picture": "https://image.shutterstock.com/image-photo/confident-successful-smiling-businessman-sitting-260nw-366213995.jpg",
         "age": 28,
+        "weight": 100,
+        "height": 5.4,
         "instruments": [
             "Stairing"
         ],
@@ -100,7 +115,10 @@
         "isActive": true,
         "balance": "$2,397.10",
         "image": "http://www.wof-fitness.de/thumb/original/news/Kursplan_Winter16_Titelbild.jpg",
+        "picture": "https://blog.airtable.com/content/images/2018/07/Caitlin-Bartley.jpg",
         "age": 32,
+        "weight": 107,
+        "height": 6.5,
         "instruments": [
             "Zumba"
         ],

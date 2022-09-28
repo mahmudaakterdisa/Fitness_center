@@ -5,15 +5,15 @@ import './Exercises.css'
 const Exercises = () => {
     const [exercises, setExercise] = useState([])
     const [addingtime, setAddingTime] = useState([])
-
+    console.log(addingtime);
     useEffect(() => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => setExercise(data))
     }, [])
 
-    const addTolist = (time) => {
-        const newdata = [...addingtime, time];
+    const addTolist = (exercisedetails) => {
+        const newdata = [...addingtime, exercisedetails];
 
         setAddingTime(newdata);
     }
@@ -28,6 +28,7 @@ const Exercises = () => {
             <div className='fitness-details'>
                 {
                     // addingtime.map(addtime => <Customerdetails key={addtime._id} addtime={addtime}></Customerdetails>)
+
                     <Customerdetails addingtime={addingtime}></Customerdetails>
                 }
             </div>

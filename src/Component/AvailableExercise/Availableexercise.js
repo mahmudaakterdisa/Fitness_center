@@ -2,7 +2,7 @@ import React from 'react';
 import './Availablexercise.css'
 
 const Availableexercise = (Props) => {
-
+    // console.log(Props.exercise)
     const { addTolist } = Props;
     const { instruments, age, time, image } = Props.exercise;
     return (
@@ -17,7 +17,7 @@ const Availableexercise = (Props) => {
 
 
 
-            <button onClick={() => addTolist(time)} id='btn'>
+            <button onClick={() => addTolist(Props.exercise)} id='btn'>
                 Add To List
             </button>
         </div>
