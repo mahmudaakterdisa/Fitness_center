@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Availableexercise from '../AvailableExercise/Availableexercise';
+import Customerdetails from '../Customerdetails/Customerdetails';
 import './Exercises.css'
 const Exercises = () => {
     const [exercises, setExercise] = useState([])
-    const [addingtime, setTime] = useState([])
+    const [addingtime, setAddingTime] = useState([])
 
     useEffect(() => {
         fetch("data.json")
@@ -13,7 +14,8 @@ const Exercises = () => {
 
     const addTolist = (time) => {
         const newdata = [...addingtime, time];
-        setTime(newdata);
+
+        setAddingTime(newdata);
     }
     return (
         <div className='exercise-container'>
@@ -24,7 +26,10 @@ const Exercises = () => {
             </div>
 
             <div className='fitness-details'>
-                <h3>data:{addingtime.length}</h3>
+                {
+                    // addingtime.map(addtime => <Customerdetails key={addtime._id} addtime={addtime}></Customerdetails>)
+                    <Customerdetails addingtime={addingtime}></Customerdetails>
+                }
             </div>
         </div>
     );

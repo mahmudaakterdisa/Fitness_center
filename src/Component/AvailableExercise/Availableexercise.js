@@ -2,7 +2,7 @@ import React from 'react';
 import './Availablexercise.css'
 
 const Availableexercise = (Props) => {
-    console.log(Props);
+
     const { addTolist } = Props;
     const { instruments, age, time, image } = Props.exercise;
     return (
