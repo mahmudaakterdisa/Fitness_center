@@ -1,0 +1,12 @@
+.exercise-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    color: red;
+}
+
+.available-exercise {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
