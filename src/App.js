@@ -5,7 +5,7 @@ import Exercises from './Component/Exercise/Exercises';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header></Header>
       <Exercises></Exercises>
     </div>

@@ -1,12 +1,20 @@
 .exercise-container {
+
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    color: red;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+
 }
 
 .available-exercise {
     margin-top: 20%;
+    margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
+}
+
+.fitness-details {
+    background-color: gray;
 }
