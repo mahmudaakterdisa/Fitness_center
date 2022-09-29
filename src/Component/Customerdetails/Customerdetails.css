@@ -78,3 +78,65 @@
 #button-text {
     font-size: 16px;
 }
+
+@media only screen and (max-width: 480px) {
+
+    .coustomer-details-container {
+        position: sticky;
+        top: 0;
+
+    }
+
+    .break-button {
+        width: 20%;
+        height: 20px;
+        margin: 5% 0;
+        background-color: brown;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .exercise-time {
+        border: 2px solid black;
+        background-color: chocolate;
+        border-radius: 5px;
+        margin-bottom: 15%;
+        color: white;
+    }
+
+    .details-container {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        /* justify-content: space-around; */
+        border: 2px solid black;
+        background-color: chocolate;
+        border-radius: 5px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+
+        color: white;
+    }
+
+    .add-break {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid black;
+        background-color: chocolate;
+        border-radius: 5px;
+        margin-bottom: 15%;
+
+        color: white;
+    }
+
+    .break-button {
+        width: 30%;
+        height: 30px;
+        margin: 5% 0;
+        background-color: brown;
+        color: white;
+    }
+}
