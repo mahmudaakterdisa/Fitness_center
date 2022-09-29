@@ -3,6 +3,7 @@ import { addToDb, getCart, getDetails } from '../../utilities/fitdb';
 
 import Availableexercise from '../AvailableExercise/Availableexercise';
 import Customerdetails from '../Customerdetails/Customerdetails';
+import Question from '../Questions/Question';
 import './Exercises.css'
 const Exercises = () => {
     const [exercises, setExercise] = useState([])
@@ -65,6 +66,11 @@ const Exercises = () => {
                     {
                         exercises.map(exercise => <Availableexercise key={exercise._id} exercise={exercise} addTolist={addTolist}></Availableexercise>)
                     }
+
+
+                </div>
+                <div className='question-container'>
+                    <Question></Question>
                 </div>
             </div>
 
