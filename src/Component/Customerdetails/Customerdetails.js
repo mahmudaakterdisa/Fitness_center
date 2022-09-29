@@ -1,7 +1,15 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Customerdetails.css'
 
 const Customerdetails = (Props) => {
+
+    const showToastMessage = () => {
+        toast.success('Activity completed !', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
 
     let name;
     let age;
@@ -17,21 +25,6 @@ const Customerdetails = (Props) => {
         weight = fitnessplan.weight;
         height = fitnessplan.height;
         image = fitnessplan.picture;
-
-        // const exercisebreak = fitnessplan.Times;
-        // const newarray = [...exercisebreak];
-
-        // breakTimes.push(exercisebreak);
-
-
-
-        // if (exercisebreak) {
-        //     const newarray = exercisebreak.map(breakexercise => console.log(breakexercise));
-
-
-        //     breakTimes = newarray;
-        // }
-
 
 
     }
@@ -68,9 +61,10 @@ const Customerdetails = (Props) => {
                 <p>Break time:{Props.breaktime}s</p>
 
             </div>
-            <button id='button-text' className='button-design'>
+            <button onClick={showToastMessage} id='button-text' className='button-design'>
                 Activity Completed
             </button>
+            <ToastContainer />
 
 
 
