@@ -5,17 +5,29 @@ import './Exercises.css'
 const Exercises = () => {
     const [exercises, setExercise] = useState([])
     const [addingtime, setAddingTime] = useState([])
-    console.log(addingtime);
+    const [breaktime, setBreaktime] = useState(0)
+
+    console.log(breaktime)
     useEffect(() => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => setExercise(data))
     }, [])
 
+    //exercise time button event handler
     const addTolist = (exercisedetails) => {
         const newdata = [...addingtime, exercisedetails];
 
         setAddingTime(newdata);
+    }
+
+    // add Break time button event handler
+    const breakexcisetime = (event) => {
+        let addbreak = 0;
+        addbreak = event;
+
+        setBreaktime(addbreak);
+
     }
     return (
         <div className='exercise-container'>
@@ -27,9 +39,9 @@ const Exercises = () => {
 
             <div className='fitness-details'>
                 {
-                    // addingtime.map(addtime => <Customerdetails key={addtime._id} addtime={addtime}></Customerdetails>)
 
-                    <Customerdetails addingtime={addingtime}></Customerdetails>
+
+                    <Customerdetails addingtime={addingtime} breakexcisetime={breakexcisetime} breaktime={breaktime}></Customerdetails>
                 }
             </div>
         </div>

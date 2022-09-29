@@ -42,7 +42,28 @@
     color: white;
 }
 
-.coustomer-details-container button {
+.add-break {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    background-color: chocolate;
+    border-radius: 5px;
+    margin-bottom: 15%;
+
+    color: white;
+}
+
+.break-button {
+    width: 10%;
+    height: 30px;
+    margin: 5% 0;
+    background-color: brown;
+    color: white;
+}
+
+.button-design {
     width: 70%;
     height: 2%;
     padding: 20px 0;

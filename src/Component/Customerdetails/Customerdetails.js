@@ -2,21 +2,37 @@ import React from 'react';
 import './Customerdetails.css'
 
 const Customerdetails = (Props) => {
-    console.log(Props.addingtime);
 
     let name;
     let age;
     let weight;
     let height;
     let image;
-    let times = 0;
-    for (const time of Props.addingtime) {
-        times = times + time.time;
-        name = time.name;
-        age = time.age;
-        weight = time.weight;
-        height = time.height;
-        image = time.picture;
+
+    let exerciseTimes = 0;
+    for (const fitnessplan of Props.addingtime) {
+        exerciseTimes = exerciseTimes + fitnessplan.time;
+        name = fitnessplan.name;
+        age = fitnessplan.age;
+        weight = fitnessplan.weight;
+        height = fitnessplan.height;
+        image = fitnessplan.picture;
+
+        // const exercisebreak = fitnessplan.Times;
+        // const newarray = [...exercisebreak];
+
+        // breakTimes.push(exercisebreak);
+
+
+
+        // if (exercisebreak) {
+        //     const newarray = exercisebreak.map(breakexercise => console.log(breakexercise));
+
+
+        //     breakTimes = newarray;
+        // }
+
+
 
     }
     return (
@@ -35,19 +51,27 @@ const Customerdetails = (Props) => {
             </div>
             <h1 className='text-color'>Add a Break</h1>
             <div className='add-break'>
-                <p></p>
+
+                <button onClick={() => Props.breakexcisetime(10)} className='break-button'>10</button>
+                <button onClick={() => Props.breakexcisetime(20)} className='break-button'>20</button>
+                <button onClick={() => Props.breakexcisetime(30)} className='break-button'>30</button>
+                <button onClick={() => Props.breakexcisetime(40)} className='break-button'>40</button>
+                <button onClick={() => Props.breakexcisetime(50)} className='break-button'>50</button>
+
+
             </div>
             <h1 className='text-color' >Exercise Details</h1>
             <div className='exercise-time'>
-                <p>Exercise time:{times}s</p>
+                <p>Exercise time:{exerciseTimes}s</p>
             </div>
             <div className='exercise-time'>
-                <p>Break time:{ }</p>
+                <p>Break time:{Props.breaktime}s</p>
 
             </div>
-            <button id='button-text'>
+            <button id='button-text' className='button-design'>
                 Activity Completed
             </button>
+
 
 
         </div>
