@@ -9,6 +9,7 @@
         "age": 35,
         "weight": 109,
         "height": 6.8,
+        "quantity": 0,
         "instruments": [
             "Weight-lift"
         ],
@@ -51,6 +52,7 @@
         "age": 38,
         "weight": 69,
         "height": 6.9,
+        "quantity": 0,
         "instruments": [
             "Cardio"
         ],
@@ -93,6 +95,7 @@
         "age": 31,
         "weight": 95,
         "height": 6.9,
+        "quantity": 0,
         "instruments": [
             "Cycling"
         ],
@@ -135,6 +138,7 @@
         "age": 37,
         "weight": 59,
         "height": 5.5,
+        "quantity": 0,
         "instruments": [
             "Running"
         ],
@@ -177,6 +181,7 @@
         "age": 28,
         "weight": 100,
         "height": 5.4,
+        "quantity": 0,
         "instruments": [
             "Stairing"
         ],
@@ -219,6 +224,7 @@
         "age": 32,
         "weight": 107,
         "height": 6.5,
+        "quantity": 0,
         "instruments": [
             "Zumba"
         ],
